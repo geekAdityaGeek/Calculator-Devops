@@ -5,6 +5,8 @@ import constants.OperationCode;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CMDInterfaceClass {
     private BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -15,6 +17,8 @@ public class CMDInterfaceClass {
         System.out.println("----\t---------\t--------");
         System.out.println(OperationCode.SQRT_code+"\t\tSQRT\t\ty=sqrt(x)");
         System.out.println(OperationCode.FACTORIAL_code+"\t\tFACTORIAL\ty=x!");
+        System.out.println(OperationCode.LOG_code+"\t\tNATURAL LOG\ty=ln(x)");
+        System.out.println(OperationCode.POWER_code+"\t\tPOWER\t\ty=x^e");
         System.out.println(OperationCode.EXIT_code+"\t\tEXIT\t\tEXIT");
         return this;
     }
@@ -33,5 +37,21 @@ public class CMDInterfaceClass {
         if(number >= 0 && number <=20 )
             return number;
         throw new Exception("Invalid Input Exception");
+    }
+
+    public Double acceptInputForNaturalLog() throws IOException {
+        System.out.print("Enter the number for which Natural Log to be calculated : ");
+        return Double.parseDouble(br.readLine());
+    }
+
+    public List<Double> acceptInputForPower() throws IOException {
+        System.out.print("Enter the mantissa for which Power to be calculated : ");
+        Double manitssa =  Double.parseDouble(br.readLine());
+        System.out.print("Enter the exponent to be calculated : ");
+        Double exponent =  Double.parseDouble(br.readLine());
+        List<Double> input = new ArrayList<Double>();
+        input.add(manitssa);
+        input.add(exponent);
+        return input;
     }
 }
