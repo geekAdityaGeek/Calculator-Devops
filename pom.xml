@@ -25,4 +25,8 @@
 
     </dependencies>
 
+    <build>
+        <finalName>Calculator-Devops</finalName>
+    </build>
+
 </project>
