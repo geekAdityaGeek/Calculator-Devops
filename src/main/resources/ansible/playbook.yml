@@ -1,0 +1,12 @@
+---
+- name: INSTALLING DOCKER
+  hosts: all
+  vars:
+    imagename: "{{ imagename }}"
+    tagver: "{{ tagver }}"
+  tasks:
+    - name: PULL DOCKER IMAGE FROM REPOSITORY
+      docker_image:
+        name: "{{ imagename }}"
+        tag: "{{ tagver }}"
+        source: pull
