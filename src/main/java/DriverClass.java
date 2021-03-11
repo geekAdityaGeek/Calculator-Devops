@@ -2,6 +2,8 @@ import calculatorUtils.FactorialUtils;
 import calculatorUtils.NaturalLogUtils;
 import calculatorUtils.PowerUtils;
 import calculatorUtils.SquareRootUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import userInterface.CMDInterfaceClass;
 
 import java.io.IOException;
