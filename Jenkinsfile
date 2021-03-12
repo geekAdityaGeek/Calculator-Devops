@@ -9,13 +9,13 @@ pipeline {
 
     stages {
 
-        stage('Maven Build') {
+        stage('MAVEN BUILD') {
             steps {
                 sh 'mvn clean install'
             }
         }
 
-        stage('docker build image') {
+        stage('DOCKER BUILD IMAGE') {
             steps {
                 script {
                   dockerImage = docker.build(registry + ":$BUILD_NUMBER", '.')
@@ -23,7 +23,7 @@ pipeline {
             }
         }
 
-        stage('docker publish image') {
+        stage('DOCKER PUBLISH IMAGE') {
             steps {
                 script {
                     docker.withRegistry( '', registryCredential ) {
@@ -33,7 +33,7 @@ pipeline {
             }
         }
 
-        stage('ansible configuration') {
+        stage('ANSIBLE CONFIGURATION AND DEPLOYMENT') {
             steps {
                 script{
                     extra_input = '-e "ansible_python_interpreter=/usr/bin/python3 imagename='+registry+' tagver=$BUILD_NUMBER"'
