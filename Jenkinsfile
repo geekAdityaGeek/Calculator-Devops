@@ -8,11 +8,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Git pull') {
-            steps {
-                git branch: 'main', credentialsId: '2594fe28-1c4f-4745-9bd2-279f91acc938', url: 'https://github.com/geekAdityaGeek/Calculator-Devops'
-            }
-        }
 
         stage('Maven Build') {
             steps {
