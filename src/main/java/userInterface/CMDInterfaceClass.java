@@ -15,11 +15,11 @@ public class CMDInterfaceClass {
         System.out.println("=======================================");
         System.out.println("CODE\tOPERATION\tWORKING");
         System.out.println("----\t---------\t--------");
-        System.out.println(OperationCode.SQRT_code+"\t\tSQRT\t\ty=sqrt(x)");
-        System.out.println(OperationCode.FACTORIAL_code+"\t\tFACTORIAL\ty=x!");
-        System.out.println(OperationCode.LOG_code+"\t\tNATURAL LOG\ty=ln(x)");
-        System.out.println(OperationCode.POWER_code+"\t\tPOWER\t\ty=x^e");
-        System.out.println(OperationCode.EXIT_code+"\t\tEXIT\t\tEXIT");
+        System.out.println(OperationCode.SQRT_code+"\tSQRT\t\ty=sqrt(x)");
+        System.out.println(OperationCode.FACTORIAL_code+"\tFACTORIAL\ty=x!");
+        System.out.println(OperationCode.LOG_code+"\tNATURAL LOG\ty=ln(x)");
+        System.out.println(OperationCode.POWER_code+"\tPOWER\t\ty=x^e");
+        System.out.println(OperationCode.EXIT_code+"\tEXIT\t\tEXIT");
         return this;
     }
     public Integer acceptOption()throws IOException{
