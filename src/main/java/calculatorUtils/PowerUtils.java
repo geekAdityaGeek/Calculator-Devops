@@ -7,7 +7,7 @@ public class PowerUtils {
     public static final Logger log = LogManager.getLogger(PowerUtils.class);
     public Double computePower(Double mantissa, Double exponent){
         Double power = Math.pow(mantissa, exponent);
-        log.info("Power - "+mantissa+","+exponent+" : "+power);
+        log.info("Power - "+mantissa+","+exponent+" : ["+power+"]");
         return power;
     }
 }

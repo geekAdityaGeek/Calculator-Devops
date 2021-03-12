@@ -7,7 +7,7 @@ public class NaturalLogUtils {
     public static final Logger log = LogManager.getLogger(NaturalLogUtils.class);
     public Double computeNaturalLog(Double number){
         Double naturalLog = Math.log(number);
-        log.info("NaturalLog - "+number+" : "+naturalLog);
+        log.info("NaturalLog - "+number+" : ["+naturalLog+"]");
         return naturalLog;
     }
 }

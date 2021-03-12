@@ -7,7 +7,7 @@ public class SquareRootUtils {
     public static final Logger log = LogManager.getLogger(SquareRootUtils.class);
     public Double performSquareRoot(Double number){
         Double sqrt = Math.sqrt(number);
-        log.info("SquareRoot - "+number+" : "+sqrt);
+        log.info("SquareRoot - "+number+" : ["+sqrt+"]");
         return sqrt;
     }
 }

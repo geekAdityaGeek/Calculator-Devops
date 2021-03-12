@@ -15,7 +15,7 @@ public class FactorialUtils {
             for (int count = number; count > 1; count--)
                 factorial *= count;
         }
-        log.info("Factorial - "+number+" : "+factorial);
+        log.info("Factorial - "+number+" : ["+factorial+"]");
         return factorial;
     }
 }
