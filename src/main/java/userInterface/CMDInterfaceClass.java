@@ -32,7 +32,7 @@ public class CMDInterfaceClass {
     }
 
     public Integer acceptInputForFactorial() throws IOException, Exception {
-        System.out.print("Enter Integer number in range from 0 to 10 for which Factorial to be calculated : ");
+        System.out.print("Enter Integer number in range from 0 to 20(both inclusive) for which Factorial to be calculated : ");
         Integer number = Integer.parseInt(br.readLine());
         if(number >= 0 && number <=20 )
             return number;

@@ -25,7 +25,7 @@ public class DriverClass {
                         break;
                     case 2:
                         Integer x_fact = userInterface.acceptInputForFactorial();
-                        Integer result_fact = new FactorialUtils().computeFactorial(x_fact);
+                        Long result_fact = new FactorialUtils().computeFactorial(x_fact);
                         System.out.println("Factorial of " + x_fact + " is " + result_fact);
                         break;
                     case 3:
